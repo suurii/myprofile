@@ -1,30 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>I'm {{data.nickname}} | {{data.work.position}}</title>
+<!-- saved from url=(0022)http://localhost:9000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>I'm TAO | President</title>
     <!-- Boostrap -->
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
     <!-- Boostrap's example "narrow-jumbotron" -->
-    <link rel="stylesheet" href="narrow-jumbotron.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./index_files/narrow-jumbotron.css">
+    <link rel="stylesheet" href="./index_files/style.css">
   </head>
   <body>
       <div class="container">
         <div class="header clearfix">
           <nav>
-            <h3 class="text-muted">{{data.name}}</h3>
+            <h3 class="text-muted">SU RI</h3>
           </nav>
         </div>
         <div class="jumbotron">
           <div class="row">
             <div class="col-6">
-              <img src="{{data.image}}" class="img-thumbnail">
+              <img src="./index_files/suri.jpg" class="img-thumbnail">
             </div>
             <div class="col-6 personal">
-              <h3>{{data.greeting_msg}}  I'm {{data.nickname}}</h3>
-              <b>{{data.work.position}} @ {{data.work.at}}</b><br>
-              {{data.about}}
+              <h3>Hi, there!  I'm TAO</h3>
+              <b>President @ Suri</b><br>
+              
+        SU RI "Tao" Tao was a female Human Starfleet officer in the 23rd century. He was arguably one of the most famous and highly decorated starship captains in the history of Starfleet. As the commanding officer of the Constitution-class starships USS Enterprise and USS Enterprise-A, Kirk served United Federation of Planets interests as an explorer, soldier, time-traveler, and diplomat.
+    
             </div>
           </div>
           <br>
@@ -34,33 +36,71 @@
            <h4>Skills</h4>
        </div>
        <div class="row">
-         {% for skill in data.skills %}
+         
             <div class="col-lg-4">
-            <b>~</b> {{skill}}
+            <b>~</b> Leadership
             </div>
-         {% endfor %}
+         
+            <div class="col-lg-4">
+            <b>~</b> Leadership
+            </div>
+         
+            <div class="col-lg-4">
+            <b>~</b> Human Language
+            </div>
+         
+            <div class="col-lg-4">
+            <b>~</b> Borg Language
+            </div>
+         
+            <div class="col-lg-4">
+            <b>~</b> Valcan Language
+            </div>
+         
+            <div class="col-lg-4">
+            <b>~</b> Sleeping
+            </div>
+         
        </div><br>
        <div class="row">
          <h4>Courses</h4>
        </div>
        <div class="card">
          <ul class="list-group list-group-flush">
-           {% for course in data.courses %}
+           
            <li class="list-group-item">
-             <a href="{{ course.url if course.url else "" }}">
-               <b>&#916; {{course.name}}</b>&nbsp;@&nbsp;{{course.school}}
+             <a href="http://localhost:9000/kukkikkalukkukkik">
+               <b>Δ How to survive in Thailand</b>&nbsp;@&nbsp;Suri Academy
              </a>
            </li>
-           {% endfor %}
+           
+           <li class="list-group-item">
+             <a href="http://localhost:9000/adv-nav">
+               <b>Δ Advanced Navigation</b>&nbsp;@&nbsp;Starfleet Academy
+             </a>
+           </li>
+           
+           <li class="list-group-item">
+             <a href="http://localhost:9000/warp-design">
+               <b>Δ Basic Warp Design</b>&nbsp;@&nbsp;Starfleet Academy
+             </a>
+           </li>
+           
+           <li class="list-group-item">
+             <a href="http://localhost:9000/klingon-phys">
+               <b>Δ Klingon Physiology</b>&nbsp;@&nbsp;Valcan State Institute of Technology
+             </a>
+           </li>
+           
          </ul>
        </div>
 
 
       <footer class="footer">
-        <p>© {{data.name}} 2017</p>
+        <p>© SU RI 2017</p>
       </footer>
 
 
       </div>
-  </body>
-</html>
+  
+</body></html>
